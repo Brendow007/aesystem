@@ -39,8 +39,9 @@ Controle de Usuarios
                         Detalhar
                     </a>
 
-                    <a class="btn btn-danger" href="/users/editar">
-                        Editar
+                    <a href="{{action('UserController@deletar', $u->id)}}">
+                        <span class="glyphicon glyphicon-trash"></span>
+                        Deletar
                     </a>
 
                 </td>

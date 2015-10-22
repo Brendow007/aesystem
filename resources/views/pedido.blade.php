@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div align="center" class="alert alert-info" >
+<div align="center" class="btn btn-warning btn-block alert-success" >
 
     <h1>Modulo em construção...</h1>
 

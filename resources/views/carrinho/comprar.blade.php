@@ -31,7 +31,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="quantidade">Quantidade</label>
                                     <div class="col-md-4">
-                                        <input id="quantidade" name="quantidade" type="number" min="1" value="{{old('quantidade')}}" placeholder="" class="form-control input-md">
+                                        <input id="quantidade" name="quantidade" type="number" min="1" required value="{{old('quantidade')}}" placeholder="" class="form-control input-md">
                                     </div>
                                 </div>
 
@@ -39,7 +39,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for=""></label>
                                     <div class="col-md-4">
-                                        <button  type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> Adicionar ao carrinho</button>
+                                        <button  type="submit" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Adicionar ao carrinho</button>
                                     </div>
                                 </div>
                             </form>

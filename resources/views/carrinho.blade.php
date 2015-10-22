@@ -10,7 +10,7 @@
 
     <table>
         <thead>
-        <tr>
+        <tr >
             <th>Product</th>
             <th>Qty</th>
             <th>Item Price</th>

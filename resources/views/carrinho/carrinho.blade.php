@@ -9,9 +9,9 @@
 
     <div class="container">
 
-        <div class="page-header">
+        <div align="center"  class="page-header">
 
-            <h1>Meu carrinho</h1>
+            <h1 align="center" class="glyphicon glyphicon-shopping-cart alert-success">Meu Pedido</h1>
         </div>
 
         <div class="row">
@@ -29,7 +29,8 @@
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped table-hover">
                         <thead>
-                            <tr>
+
+                            <tr class="btn-warning">
                                 <th>Nome</th>
                                 <th>Preço</th>
                                 <th>Quantidade</th>

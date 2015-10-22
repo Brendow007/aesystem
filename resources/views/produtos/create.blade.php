@@ -30,7 +30,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Nome</label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="nome" value="{{ old('nome') }}">
+                            <input type="text" class="form-control" name="nome" required value="{{ old('nome') }}">
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@
                         <label class="col-md-4 control-label">Quantidade </label>
                         <div class="col-md-6">
                             <!-- depois voc muda para um campo select com os tipos de produtos -->
-                            <input type="number" class="form-control" name="quantidade" min="1" max="100000" value="{{ old('quantidade') }}">
+                            <input type="number" class="form-control" name="quantidade" min="1" max="100000" required value="{{ old('quantidade') }}">
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@
                         <label class="col-md-4 control-label">Preco</label>
                         <div class="col-md-6">
                             <!-- depois voc muda para um campo select com os tipos de produtos -->
-                            <input type="number" class="form-control" name="preco" step="0.01" min="1" max="10000.00" value="{{ old('preco') }}">
+                            <input type="number" class="form-control" name="preco" step="0.01" min="1" max="10000.00" required value="{{ old('preco') }}">
                         </div>
                     </div>
 
@@ -77,7 +77,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Disponivel</label>
                         <div class="col-md-6">
-                            <select name="disponibilidade" class="form-control" {{ old('disponibilidade') }}>
+                            <select name="disponibilidade" class="form-control" required {{ old('disponibilidade') }}>
                                 <option value="1">Disponível</option>
                                 <option value="0">Indisponível</option>
                             </select>
@@ -89,7 +89,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Descricao</label>
                         <div class="col-md-6">
-                           <textarea name="descricao" placeholder="Descricao do produto" class="form-control"></textarea>
+                           <textarea name="descricao" placeholder="Descricao do produto" required class="form-control"></textarea>
                         </div>
                     </div>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head class="alert-info" >
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +18,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<nav class="alert-info navbar navbar-primary">
+<body class="alert-warning">
+<nav class="alert-warning navbar navbar-primary">
 
     <div class="container-fluid">
 
@@ -68,7 +68,7 @@
 
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="{{route('carrinho.carrinho')}}">Meu carrinho <span class="badge">{{$totalItens}}</span></a></li>
+                            <li><a class="glyphicon glyphicon-shopping-cart alert-success" href="{{route('carrinho.carrinho')}}">Meu carrinho <span class="badge">{{$totalItens}}</span></a></li>
                             @if (Auth::guest())
 
                                 <li><a class="btn btn-warning" href="/auth/login">Entrar</a></li>

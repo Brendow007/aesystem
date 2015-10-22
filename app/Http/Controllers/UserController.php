@@ -25,11 +25,20 @@ public function perfil(){
     $pessoa = Pessoa::all();
     return view('users/perfil')->with('pessoa',$pessoa);
 }
-public function editar(){
 
-    //Flash::message("Em manutenção!");
-        return "Modulo em Manutenção!";
-}
+
+#editar usuario
+    public function editar($id){
+        $users = User::find($id);
+
+        return view('users/editar')->with('users', $users);
+        //return view('produtos.edit')->with('produto', $produto);
+
+        //Flash::message("Em manutenção!");
+     # return "Modulo em Manutenção!";
+     }
+
+#detalhar usuário
     public function detalhar($id){
 
        // Flash::message("Em manutenção!");
@@ -42,7 +51,22 @@ public function editar(){
         if(empty($busca)) {
             return 'Usuario Inexistente';
 
-        }return view('users/detalhar')->with('users',$busca)->with('pessoas',$pessoas);
-}
+        }return view('users/detalhar')->with('users',$busca)->with('pessoas',$pessoas);}
+
+
+#deletar usuário
+    public function deletar($id)
+    {
+        if($id == null){
+            abort(404);
+        }
+
+        $user = User::find($id);
+        $user->delete();
+        Flash::error("Usuário removido com sucesso!");
+
+        return redirect()->action('UserController@listar');
+    }
+
 
 }

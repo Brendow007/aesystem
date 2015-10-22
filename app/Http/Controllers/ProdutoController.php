@@ -141,6 +141,9 @@ class ProdutoController extends Controller {
 
         return redirect()->route('produtos.index');
 	}
+
+
+
     public function cart(){
 //https://github.com/Crinsane/LaravelShoppingcart#usage
 
@@ -150,7 +153,6 @@ class ProdutoController extends Controller {
         //Cart::instance('Carrinho')->add(Produto::all());
         //Cart::instance('shopping')->add('192ao12', 'Product 1', 1, 9.99);
        //$content = Cart::content();
-
 
         return view('carrinho');
 

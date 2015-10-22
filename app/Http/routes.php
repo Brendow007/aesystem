@@ -21,7 +21,8 @@ Route::get('lista-produtos', ['as' => 'listaprodutos', 'uses' => 'HomeController
 
 //Users
 Route::get('/users/listar','UserController@listar');
-Route::get('/users/editar','UserController@editar');
+Route::get('/users/editar/{id}','UserController@editar');
+Route::get('/users/deletar/{id}','UserController@deletar');
 Route::get('/users/detalhar/{id}','UserController@detalhar')->where('id', '[0-9]+');
 Route::get('/users/perfil','UserController@perfil');
 

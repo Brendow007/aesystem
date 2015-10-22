@@ -45,9 +45,9 @@ Lista de produtos
 
                     <td>
                         @if($produto->disponibilidade == "1")
-                        <a href="{{route('carrinho.comprar', ['id' => $produto->id])}}" class="btn btn-large btn-primary"><i class="glyphicon glyphicon-shopping-cart-"></i> Comprar</a>
+                        <a href="{{route('carrinho.comprar', ['id' => $produto->id])}}" class="btn btn-success"><i class="glyphicon glyphicon-plus-"></i> Comprar</a>
                          @else
-                            <button class="btn btn-large btn-primary" disabled="disabled"><i class="glyphicon glyphicon-shopping-cart-"></i> Comprar</button>
+                            <button class="btn btn-success" disabled="disabled"><i class="glyphicon glyphicon-plus-"></i> Comprar</button>
                         @endif
                     </td>
                 </tr>
