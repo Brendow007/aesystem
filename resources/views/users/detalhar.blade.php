@@ -49,10 +49,15 @@
                     <th>ID</th>
                     <th>USUÁRIO</th>
                     <th>EMAIL</th>
+                    <th>PERFIL</th>
+                    <th>ENDERECO</th>
+                    <th>TELEFONE</th>
+                    <th>CPF</th>
 
                 </tr>
             </thead>
-            <tbody>
+
+            </tbody>
 
 
 
@@ -70,6 +75,21 @@
 
 <td>
    {{$u->email}}
+</td>
+
+<td>
+   {{$u->perfil}}
+</td>
+
+<td>
+   {{$u->endereco}}
+</td>
+
+<td>
+   {{$u->telefone}}
+</td>
+
+   {{$u->cpf}}
 </td>
 
 

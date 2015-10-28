@@ -1,4 +1,4 @@
-@extends('app')
+@extends('tema')
 
 @section('content')
 @section('title')

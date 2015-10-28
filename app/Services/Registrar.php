@@ -30,10 +30,11 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-        $p = new Pessoa();
-        $u = new User($p);
+        #$p = new Pessoa();
 
-        $p->user($u);
+        $u = new User();
+
+        #$p->user($u);
         //$u->pessoa()->save($p);
 
 
@@ -41,19 +42,22 @@ class Registrar implements RegistrarContract {
 
 		'name' => $data['name'],
 		'email' => $data['email'],
-		'password' => bcrypt($data['password'])
+		'password' => bcrypt($data['password']),
+        'perfil' =>'null',
+        'cpf' =>'null',
+        'telefone' =>'null',
+        'endereco' =>'null'
 
         ]);
-
+/*
         $p::create([
-        'user_id' =>$u->id,
         'perfil'=>'default',
         'cpf'=>'default',
         'telefone'=>'default',
         'endereco'=>'default',
         ]);
 
-
+*/
 
     }
 

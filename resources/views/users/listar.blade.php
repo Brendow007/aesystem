@@ -6,7 +6,7 @@ Controle de Usuarios
 @section('content')
 
 
-@if(Auth::user()->name == "Brendow")
+@if(Auth::user()->perfil == null)
 
 
 <div class="container">
