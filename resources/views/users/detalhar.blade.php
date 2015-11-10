@@ -99,8 +99,7 @@
 
         </table>
                 <a class="btn btn-info" href="/users/listar">Voltar</a>
-                <a class="btn btn-danger" href="/users/editar">Editar</a>
-                <a class="btn btn-success" href="/users/editar/{{$u->id}}">EditarRR </a>
+                <a class="btn btn-success" href="/users/editar/{id} {{$u->id}}">Editar </a>
 
         @endforeach
     </div>

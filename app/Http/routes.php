@@ -21,11 +21,18 @@ Route::get('lista-produtos', ['as' => 'listaprodutos', 'uses' => 'HomeController
 
 //Users
 Route::get('/users/listar','UserController@listar');
-Route::get('/users/editar/{id}','UserController@editar');
-Route::get('/users/atualizar','UserController@update');
-Route::get('/users/deletar/{id}','UserController@deletar');
+//edit
+Route::get('users/editar/{id}','UserController@editar')->where('id', '[0-9]+');
+Route::put('users/update/{id}','UserController@update')->where('id', '[0-9]+');
+//delete
+Route::get('/users/deletar/{id}','UserController@deletar')->where('id', '[0-9]+');
+//detalhe
 Route::get('/users/detalhar/{id}','UserController@detalhar')->where('id', '[0-9]+');
+//perfil
 Route::get('/users/perfil','UserController@perfil');
+
+
+
 
 //Pedido
 Route::get('pedido','PedidoController@listar');

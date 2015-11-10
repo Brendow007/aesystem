@@ -7,7 +7,7 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container" >
 
         <div align="center"  class="page-header">
 
@@ -68,7 +68,9 @@
 
             </div>
         </div>
-
+<div align="center">
+                        <a type="submit"  class="btn btn btn-large btn-success">Finalizar pedido</a>
+</div>
     </div>
 
 @endsection

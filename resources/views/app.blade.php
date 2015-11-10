@@ -18,8 +18,14 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="alert-warning">
-<nav class="alert-warning navbar navbar-primary">
+<body>
+<div class="alert alert-success btn-block" align="center">
+
+    <h1 align="center" class=" panel glyphicon glyphicon-shopping-cart">AE-SYSTEM - Sistema de Atendimento Eletrônico</h1>
+
+</div>
+
+<nav class="alert-info navbar navbar-primary">
 
     <div class="container-fluid">
 
@@ -40,7 +46,9 @@
 
 
 
-        <a class="btn btn-info btn-block" href="/" >AE-SYSTEM</a>
+        <a class="btn btn-primary btn-block" href="/" >AE-SYSTEM</a>
+
+        <br>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 

@@ -3,9 +3,16 @@
 @section('content')
 
 
-<div align="center" class="btn btn-warning btn-block alert-success" >
+<div align="center" >
 
-    <h1>Modulo em construção...</h1>
+
+
+
+
+    <h3>Coloque sua atual mesa: </h3><input type="text" class="form-control" name="nome" required value="">
+    <br>
+
+    <a class="btn-block btn-lg btn-success" href="/carrinho/carrinho">Iniciar Pedido! </a>
 
 </div>
 

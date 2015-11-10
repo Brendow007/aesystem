@@ -8,26 +8,28 @@ use Illuminate\Http\Request;
 use Laracasts\Flash\Flash;
 
 class UserController extends Controller {
+//funçao que requere a autenticação para acessar as ações do controllador
 
     public function __construct(){$this->middleware('auth');}
 
+// lista usuarios cadastrados
+
     public function listar()
-	{
-
-    $users = User::all();
+	{$users = User::all();
     return view('users.listar')->with('users',$users);
+    }
 
-	}
 
-public function perfil(){
+    //perfil
+    public function perfil(){
     $users = User::all();
-
     $pessoa = Pessoa::all();
     return view('users/perfil')->with('pessoa',$pessoa);
 }
 
 
-#editar usuario
+#função editar usuario
+
     public function editar($id){
 
         $users = User::find($id);
@@ -37,7 +39,7 @@ public function perfil(){
      }
 
 
-    public function update(Request $request, $id)
+    public function update($request, $id)
     {
 
         if($id == null){
@@ -53,8 +55,21 @@ public function perfil(){
         Flash::warning("Usuario atualizado com sucesso!");
 
         //redireciona novamente para index.
-        return redirect()->route('users/listar');
+        return redirect()->action('UserController@listar');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function store(Requests $request)
     {
         //este metodo recebe os parametros passasdos pelo formulario
@@ -65,11 +80,16 @@ public function perfil(){
         Flash::message("Produto adicionado com sucesso!");
 
         //e em seguida redirecionar o usuario para a pagina com a lista dos produtos cadastrados
-        return redirect()->route('produtos.index');
+        return redirect()->action('UserController@listar');
     }
 
 
-#detalhar usuário
+
+
+
+
+#função detalhar usuário
+
     public function detalhar($id){
 
        // Flash::message("Em manutenção!");
@@ -80,12 +100,14 @@ public function perfil(){
 
         //Condição de existência
         if(empty($busca)) {
-            return 'Usuario Inexistente';
+            return Flash::error("Usuário Inexistente!");
+
 
         }return view('users/detalhar')->with('users',$busca)->with('pessoas',$pessoas);}
 
 
-#deletar usuário
+#função deletar usuário
+
     public function deletar($id)
     {
         if($id == null){
