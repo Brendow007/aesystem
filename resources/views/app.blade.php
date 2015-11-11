@@ -8,6 +8,29 @@
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="/css/mdb.css" rel="stylesheet">
+
+    <!-- Template style -->
+    <link href="/css/style.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='ssheetylet' type='text/css'>
 
@@ -18,14 +41,14 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<div class="alert alert-success btn-block" align="center">
+<body class="">
+<div class="btn-block" align="center">
 
-    <h1 align="center" class=" panel glyphicon glyphicon-shopping-cart">AE-SYSTEM - Sistema de Atendimento Eletrônico</h1>
+    <h2 align="center" class="glyphicon glyphicon-shopping-cart">AE-SYSTEM - Sistema de Atendimento Eletrônico</h2>
 
 </div>
 
-<nav class="alert-info navbar navbar-primary">
+<nav class="navbar navbar-primary">
 
     <div class="container-fluid">
 
@@ -46,7 +69,6 @@
 
 
 
-        <a class="btn btn-primary btn-block" href="/" >AE-SYSTEM</a>
 
         <br>
 
@@ -54,8 +76,8 @@
 
 
 
-            <ul class="nav navbar-nav alert-success">
-					<li><a class="btn btn-primary" href="/">Gerenciar</a></li>
+            <ul class="nav navbar-nav">
+					<li><a class="" href="/">Inicio</a></li>
                     <li><a class="btn btn-success" href="{{route('produtos.index')}}"> Produtos </a> </li>
                 </ul>
 
@@ -76,7 +98,7 @@
 
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="glyphicon glyphicon-shopping-cart alert-success" href="{{route('carrinho.carrinho')}}">Meu carrinho <span class="badge">{{$totalItens}}</span></a></li>
+                            <li><a class="glyphicon glyphicon-shopping-cart" href="{{route('carrinho.carrinho')}}">Meu pedido <span class="badge">{{$totalItens}}</span></a></li>
                             @if (Auth::guest())
 
                                 <li><a class="btn btn-warning" href="/auth/login">Entrar</a></li>
@@ -86,11 +108,10 @@
 
                                 <li class="dropdown">
 
-							         <a href="#" class="btn-warning dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+							         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
 
                                     <ul class="dropdown-menu" role="menu">
-                                <li><a class="btn-warning" href="/users/perfil">Perfil</a></li>
-                                <li><a class="btn-warning" href="/auth/logout">Sair</a></li>
+                                <li><a href="/auth/logout">Sair</a></li>
 
 							</ul>
 						</li>
@@ -101,8 +122,10 @@
                 </div>
             </div>
         </div>
+
      </div>
 </nav>
+    <div class="panel-footer nav navbar-fixed-bottom primary-color">AESystem Ⓡ 2015</div>
 
 
     <div class="container">
