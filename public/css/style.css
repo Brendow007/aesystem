@@ -18,19 +18,19 @@ body {
 }
 
 .item:nth-child(1) {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/churras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item:nth-child(2) {
-    background-image: url(../img/3.jpg);
+    background-image: url(../img/Algonquin-Blue-Bar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item:nth-child(3) {
-    background-image: url(../img/9.jpg);
+    background-image: url(../img/blue%20bar%203.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

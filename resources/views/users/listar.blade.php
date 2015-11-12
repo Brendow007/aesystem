@@ -9,12 +9,12 @@ Controle de Usuarios
 @if(Auth::user()->perfil == null)
 
 
-<div class="container">
-    <h1 align="center" class="btn-info">Usuários</h1>
+<div class="container" align="center">
+    <h1 align="center" class="glyphicon glyphicon-user">Usuários</h1>
     <table class="table table-striped table-bordered table-hover">
 
 
-            <thead class="btn-warning alert-warning">
+            <thead class="alert alert-info">
             <tr>
 
                 <th>ID</th>

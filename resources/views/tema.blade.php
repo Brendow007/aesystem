@@ -205,7 +205,7 @@
     <div class="footer-copyright">
         <div class="container">
             © 2015 Copyright AE-SYSTEM
-            <a class="grey-text text-lighten-4 right" href="#!">Veja link</a>
+            <a class=white-text text-lighten-4 right" href="#!">Veja link</a>
         </div>
     </div>
 </footer>

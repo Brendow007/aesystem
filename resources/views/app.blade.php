@@ -77,38 +77,38 @@
 
 
             <ul class="nav navbar-nav">
-					<li><a class="" href="/">Inicio</a></li>
-                    <li><a class="btn btn-success" href="{{route('produtos.index')}}"> Produtos </a> </li>
+					<li><a class="primary-color waves-effect waves-light" href="/">Inicio</a></li>
+                    <li><a class="primary-color waves-effect waves-light" href="{{route('produtos.index')}}"> Produtos </a> </li>
                 </ul>
 
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                    <li><a class="btn btn-success" href="{{url('pedido')}}">Pedidos </a> </li>
+                    <li><a class="primary-color waves-effect waves-light" href="{{url('pedido')}}">Pedidos </a> </li>
                 </ul>
 
 
 
                     <div>
                         <ul class="nav navbar-nav">
-                    <li><a class="btn btn-success" href="{{url('users/listar')}}"><span class="glyphicons glyphicons-user"></span></i> Usuários </a> </li>
+                    <li><a class="primary-color waves-effect waves-light" href="{{url('users/listar')}}"><span class="glyphicons glyphicons-user"></span></i> Usuários </a> </li>
                     </ul>
 
 
 
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="glyphicon glyphicon-shopping-cart" href="{{route('carrinho.carrinho')}}">Meu pedido <span class="badge">{{$totalItens}}</span></a></li>
+                            <li><a class="glyphicon glyphicon-shopping-cart waves-effect waves-light" href="{{route('carrinho.carrinho')}}">Meu pedido <span class="badge">{{$totalItens}}</span></a></li>
                             @if (Auth::guest())
 
-                                <li><a class="btn btn-warning" href="/auth/login">Entrar</a></li>
-                                <li><a class="btn btn-warning" href="/auth/register">Registrar</a></li>
+                                <li><a class="primary-color waves-effect waves-light" href="/auth/login">Entrar</a></li>
+                                <li><a class="primary-color waves-effect waves-light" href="/auth/register">Registrar</a></li>
 
                             @else
 
                                 <li class="dropdown">
 
-							         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+							         <a href="#" class="dropdown-toggle waves-effect waves-light waves-block " data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
 
                                     <ul class="dropdown-menu" role="menu">
                                 <li><a href="/auth/logout">Sair</a></li>
@@ -125,9 +125,11 @@
 
      </div>
 </nav>
-    <div class="panel-footer nav navbar-fixed-bottom primary-color">AESystem Ⓡ 2015</div>
-
-
+<div class="primary-color footer-copyright footer navbar-fixed-bottom">
+    <div align="center" class="container white-text">
+        © 2015 Copyright AE-SYSTEM
+    </div>
+</div>
     <div class="container">
         @include('flash::message')
     </div>
@@ -136,8 +138,16 @@
 	@yield('content')
 
 	<!-- Scripts -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- JQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Material Design Bootstrap -->
+<script type="text/javascript" src="/js/mdb.js"></script>
+
 
 </body>
 </html>

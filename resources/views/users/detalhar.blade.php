@@ -5,44 +5,12 @@
     <title>Controle de estoque</title>
 
     <div class="container">
-        <h2 align="center" class="btn-info"> Detalhes do Usuário</h2>
+        <h3 align="center" class="primary-color white-text"> Detalhes do Usuário</h3>
         <table class="table table-striped table-bordered table-hover">
-                <thead class="btn-warning alert-warning">
-                <tr>
-
-                    <th>PERFIL</th>
-                    <th>CPF</th>
-                    <th>TELEFONE</th>
-                    <th>ENDEREÇO</th>
-
-                </tr>
-                </thead>
-                <tbody>
-
-        @foreach($pessoas as $p)
-
-        <tr>
-                <td>
-                   {{$p->perfil}}
-                </td>
-
-                <td>
-                   {{$p->cpf}}
-                </td>
-
-                <td>
-                   {{$p->telefone}}
-                </td>
-
-                <td>
-                   {{$p->endereco}}
-                </td>
-        </tr>
 
 
-        @endforeach
 
-            <thead class="btn-success alert-success">
+            <thead class="alert-info">
 
                 <tr>
 
@@ -89,6 +57,7 @@
    {{$u->telefone}}
 </td>
 
+<td>
    {{$u->cpf}}
 </td>
 
