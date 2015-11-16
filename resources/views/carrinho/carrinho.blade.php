@@ -9,16 +9,18 @@
 
     <div class="container" >
 
+
         <div align="center"  class="page-header">
 
-            <h1 align="center" class="glyphicon glyphicon-shopping-cart alert-success">Meu Pedido</h1>
+            <h3 align="center" class="glyphicon glyphicon-shopping-cart">Meu Pedido</h3>
+        <aside class="fa-long-arrow-right" float:right><a type="submit"  class="alert btn btn btn-large btn-success">Finalizar pedido <b class="glyphicon glyphicon-arrow-right"></b></a></aside>
         </div>
 
         <div class="row">
 
             <div class="col-lg-8 col-lg-offset-2">
 
-                <a href="{{route('listaprodutos')}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Adicionar produto ao carrinho</a>
+                <a href="{{route('listaprodutos')}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i>Quero pedir mais!</a>
                 <br/>
                 <br/>
 
@@ -31,14 +33,20 @@
                         <thead>
 
                             <tr class="btn-warning">
+
                                 <th>Nome</th>
                                 <th>Preço</th>
                                 <th>Quantidade</th>
                                 <th>Total item (R$)</th>
                                 <th>Remover</th>
+
                             </tr>
+
                         </thead>
+
                         <tbody>
+
+
                             @foreach($itens as $item)
                                 <tr>
                                     <td>{{$item->name}}</td>
@@ -68,9 +76,7 @@
 
             </div>
         </div>
-<div align="center">
-                        <a type="submit"  class="btn btn btn-large btn-success">Finalizar pedido</a>
-</div>
+
     </div>
 
 @endsection

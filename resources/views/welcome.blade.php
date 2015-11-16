@@ -45,7 +45,7 @@
             <div class="item">
                 <div class="carousel-caption hidden-xs">
                     <div data-animation="animated fadeInLeftBig">
-                        <h2>Aproveite o que há de melhor de em estabelecimento!</h2>
+                        <h2>Aproveite o que há de melhor em nosso estabelecimento!</h2>
                     </div>
                 </div>
             </div>
@@ -82,12 +82,18 @@
                         <p>Um dos mais pedidos da semana, o prato especial de nossa freguesia.</p>
                     </div>
                     <div class="card-action">
-                        <button type="button" class="btn btn-primary waves-effect waves-light">É so pedir!</button>
+                        <a class="btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos">É so pedir!</a>
                     </div>
                 </div>
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
+
+                <div align="center">
+                    <a class="btn btn-lg btn-block btn-warning waves-effect waves-light" href="http://localhost:8000/lista-produtos">FAZER PEDIDO!</a>
+                </div>
+<br>
+<br>
                 <div class="card hoverable">
                     <div class="card-image">
                         <img src="http://www.emporiorigolo.com.br/wp-content/uploads/2014/03/Post-dia-31-2.jpeg">
@@ -97,15 +103,11 @@
                         <p>Um dos mais pedidos da semana, o prato especial de nossa freguesia.</p>
                     </div>
                     <div class="card-action" align="center">
-                        <button type="button" class="btn btn-primary waves-effect waves-light">Aproveite agora!</button>
+                        <a class="btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos">Aproveite agora!</a>
                     </div>
 
                 </div>
-                        <br>
-                        <div align="center">
-                        <br>
-                        <a class="btn btn-lg btn-block btn-success">PEDIR!</a>
-                        </div>
+
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
@@ -119,7 +121,7 @@
                         <p>Um dos mais pedidos da semana, o prato especial de nossa freguesia.</p>
                     </div>
                     <div class="card-action" align="right">
-                        <button type="button" class="btn btn-primary waves-effect waves-light">Peça ja o seu!</button>
+                        <a class="btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos">Peça ja o seu!</a>
                     </div>
                 </div>
             </div>

@@ -44,6 +44,9 @@
                             <select name="tipo" class="form-control" {{ old('tipo') }}>
                                 <option value="Comida">Comida</option>
                                 <option value="Bebida">Bebida</option>
+                                <option value="Sobremesa">Sobremesa</option>
+                                <option value="Drink">Drink</option>
+                                <option value="Combo">Combo</option>
                             </select>
 
                         </div>

@@ -5,19 +5,32 @@ Lista de produtos
 @endsection
 
 @section('content')
-<div class="container" bgcolor="#f0f8ff">
 
-    <div class="row">
+    <body class="alert-success">
 
+<div class="container" bgcolor="#f0f8ff" align="center">
+
+
+<br>
+                <b class="icon-large icon-fast-food alert-info"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect">  Comidas</a>
+                <b class="icon-large icon-beer alert-info"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect"> Bebidas</a>
+                <b class="icon-large icon-cake"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect">  Sobremesas</a>
+                <b class="icon-large icon-drink"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect"> Drinks</a>
+                <b class="icon-large icon-pizza"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect"> Combos</a>
         <div class="col-lg-8 col-lg-offset-2">
 
-            <a href="{{route('produtos.create')}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Novo produto</a>
 
-            <br/>
-            <br>
+
+
             @if($produtos != null)
 
-            <table class="table">
+
+                <table class="table">
                 <thead>
                 <tr class="btn-info">
 
@@ -65,4 +78,6 @@ Lista de produtos
         </div>
     </div>
 </div>
+
+    </body>
 @endsection

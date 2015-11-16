@@ -23,8 +23,8 @@
     <!-- Template style -->
     <link href="/css/style.css" rel="stylesheet">
 
-
-
+    <!-- Template style Icons Specials-->
+    <link href="css/bootstrap.icon-large.min.css" rel="stylesheet">
 
 
 
@@ -98,7 +98,11 @@
 
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="glyphicon glyphicon-shopping-cart waves-effect waves-light" href="{{route('carrinho.carrinho')}}">Meu pedido <span class="badge">{{$totalItens}}</span></a></li>
+                            <li><a class="glyphicon glyphicon-list waves-effect waves-light" href="{{route('listaprodutos')}}"> Cardapio</a></li>
+
+                            <ul class="nav navbar-nav navbar-right">
+                            <li><a class="glyphicon glyphicon-shopping-cart waves-effect waves-light" href="{{route('carrinho.carrinho')}}"> Meu pedido <span class="badge">{{$totalItens}}</span></a></li>
+
                             @if (Auth::guest())
 
                                 <li><a class="primary-color waves-effect waves-light" href="/auth/login">Entrar</a></li>
