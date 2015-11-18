@@ -3,12 +3,16 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Illuminate\Support\Facades\DB;
 use App\Produto;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 use Laracasts\Flash\Flash;
 
 class CarrinhoController extends Controller {
+
+
+
 
     public function comprar(Request $request){
         $produto = null;
@@ -27,8 +31,8 @@ class CarrinhoController extends Controller {
 
             Cart::add(rand(1, 10000000), $produto->nome , $request->quantidade , $produto->preco, array('size' => 'large'));
 
-            Flash::success("{$produto->nome} adicionado ao carrinho!");
-            return redirect()->route('listaprodutos');
+            Flash::success("{$produto->nome} adicionado ao Pedido!");
+            return redirect()->route('listaprodutos1');
         }
         else{
 
@@ -49,7 +53,7 @@ class CarrinhoController extends Controller {
         if($request->rowid != null){
             Cart::remove($request->rowid);
 
-            Flash::success("Item removido do carrinho");
+            Flash::success("Item removido do pedido");
 
             return redirect()->back();
         }

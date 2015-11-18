@@ -51,7 +51,7 @@
 
 
                             <select name="tipo" class="form-control" {{ old('perfil') }}>
-                                <option value="Comida">ADM</option>
+                                <option value="Comida">Administrador</option>
                                 <option value="Bebida">Funcionario</option>
                             </select>
 
@@ -64,6 +64,7 @@
 
 
             </table>
+
             <a class="btn btn-info" href="/users/listar">Atualizar Dados!</a>
 
             </table>

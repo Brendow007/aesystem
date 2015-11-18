@@ -2,6 +2,7 @@
 
 use App\Produto;
 use App\User;
+use Illuminate\Support\Facades\DB;
 use Symfony\Component\Security\Core\Tests\Authentication\Provider\UserAuthenticationProviderTest;
 
 class HomeController extends Controller {
@@ -42,10 +43,5 @@ class HomeController extends Controller {
 
 	}
 
-    public function produtos(){
-        $produtos = Produto::all();
-
-        return view('produtos')->with('produtos', $produtos);
-    }
 
 }

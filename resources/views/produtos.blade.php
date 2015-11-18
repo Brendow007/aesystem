@@ -11,19 +11,21 @@ Lista de produtos
 <div class="container" bgcolor="#f0f8ff" align="center">
 
 
-<br>
-                <b class="icon-large icon-fast-food alert-info"></b>
-                <a class="btn btn-lg btn-material-deeppurple waves-effect">  Comidas</a>
-                <b class="icon-large icon-beer alert-info"></b>
-                <a class="btn btn-lg btn-material-deeppurple waves-effect"> Bebidas</a>
-                <b class="icon-large icon-cake"></b>
-                <a class="btn btn-lg btn-material-deeppurple waves-effect">  Sobremesas</a>
-                <b class="icon-large icon-drink"></b>
-                <a class="btn btn-lg btn-material-deeppurple waves-effect"> Drinks</a>
-                <b class="icon-large icon-pizza"></b>
-                <a class="btn btn-lg btn-material-deeppurple waves-effect"> Combos</a>
-        <div class="col-lg-8 col-lg-offset-2">
 
+        <div class="col-lg-10 col-lg-offset-1">
+<br>
+
+
+                <b class="icon-large icon-fast-food alert-info"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect" href="http://localhost:8000/lista-produtos1">  Comidas</a>
+                <b class="icon-large icon-beer alert-info"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect" href="http://localhost:8000/lista-produtos2"> Bebidas</a>
+                <b class="icon-large icon-cake"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect " href="http://localhost:8000/lista-produtos3">  Sobremesas</a>
+                <b class="icon-large icon-drink"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect" href="http://localhost:8000/lista-produtos4"> Drinks</a>
+                <b class="icon-large icon-pizza"></b>
+                <a class="btn btn-lg btn-material-deeppurple waves-effect" href="http://localhost:8000/lista-produtos5"> Combos</a>
 
 
 

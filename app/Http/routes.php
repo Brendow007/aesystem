@@ -17,7 +17,11 @@ Route::get('/', 'WelcomeController@index');
 //home
 Route::get('home', 'HomeController@index');
 
-Route::get('lista-produtos', ['as' => 'listaprodutos', 'uses' => 'HomeController@produtos']);
+Route::get('lista-produtos1', ['as' => 'listaprodutos1', 'uses' => 'MenuController@produtos1']);
+Route::get('lista-produtos2', ['as' => 'listaprodutos2', 'uses' => 'MenuController@produtos2']);
+Route::get('lista-produtos3', ['as' => 'listaprodutos3', 'uses' => 'MenuController@produtos3']);
+Route::get('lista-produtos4', ['as' => 'listaprodutos4', 'uses' => 'MenuController@produtos4']);
+Route::get('lista-produtos5', ['as' => 'listaprodutos5', 'uses' => 'MenuController@produtos5']);
 
 //Users
 Route::get('/users/listar','UserController@listar');
@@ -35,6 +39,8 @@ Route::get('/users/perfil','UserController@perfil');
 
 
 //Pedido
+Route::get('pedido','PedidoController@listar');
+
 Route::get('pedido','PedidoController@listar');
 
 

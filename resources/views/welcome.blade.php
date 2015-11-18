@@ -82,7 +82,7 @@
                         <p>Um dos mais pedidos da semana, o prato especial de nossa freguesia.</p>
                     </div>
                     <div class="card-action">
-                        <a class="btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos">É so pedir!</a>
+                        <a class="white-text btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos1">É so pedir!</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
             <div class="col-md-4">
 
                 <div align="center">
-                    <a class="btn btn-lg btn-block btn-warning waves-effect waves-light" href="http://localhost:8000/lista-produtos">FAZER PEDIDO!</a>
+                    <a class="btn btn-lg btn-block btn-warning waves-effect waves-light" href="http://localhost:8000/lista-produtos1">FAZER PEDIDO!</a>
                 </div>
 <br>
 <br>
@@ -103,7 +103,7 @@
                         <p>Um dos mais pedidos da semana, o prato especial de nossa freguesia.</p>
                     </div>
                     <div class="card-action" align="center">
-                        <a class="btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos">Aproveite agora!</a>
+                        <a class="white-text btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos1">Aproveite agora!</a>
                     </div>
 
                 </div>
@@ -121,7 +121,7 @@
                         <p>Um dos mais pedidos da semana, o prato especial de nossa freguesia.</p>
                     </div>
                     <div class="card-action" align="right">
-                        <a class="btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos">Peça ja o seu!</a>
+                        <a class="white-text btn btn-primary waves-effect waves-light" href="http://localhost:8000/lista-produtos1">Peça ja o seu!</a>
                     </div>
                 </div>
             </div>

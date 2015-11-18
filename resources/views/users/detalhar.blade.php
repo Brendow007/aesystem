@@ -5,7 +5,7 @@
     <title>Controle de estoque</title>
 
     <div class="container">
-        <h3 align="center" class="primary-color white-text"> Detalhes do Usuário</h3>
+        <h4 align="center" class="text-info"> Detalhes do Usuário</h4>
         <table class="table table-striped table-bordered table-hover">
 
 

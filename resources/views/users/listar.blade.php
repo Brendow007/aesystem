@@ -10,7 +10,7 @@ Controle de Usuarios
 
 
 <div class="container" align="center">
-    <h1 align="center" class="glyphicon glyphicon-user">Usuários</h1>
+    <h1 align="center" class="text-info glyphicon glyphicon-user">Usuários</h1>
     <table class="table table-striped table-bordered table-hover">
 
 

@@ -44,7 +44,7 @@
 <body class="">
 <div class="btn-block" align="center">
 
-    <h2 align="center" class="glyphicon glyphicon-shopping-cart">AE-SYSTEM - Sistema de Atendimento Eletrônico</h2>
+    <h2 align="center" class="text-info glyphicon glyphicon-cutlery"> AE-SYSTEM - Sistema de Atendimento Eletrônico</h2>
 
 </div>
 
@@ -98,7 +98,7 @@
 
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="glyphicon glyphicon-list waves-effect waves-light" href="{{route('listaprodutos')}}"> Cardapio</a></li>
+                            <li><a class="glyphicon glyphicon-list waves-effect waves-light" href="{{route('listaprodutos1')}}"> Cardapio</a></li>
 
                             <ul class="nav navbar-nav navbar-right">
                             <li><a class="glyphicon glyphicon-shopping-cart waves-effect waves-light" href="{{route('carrinho.carrinho')}}"> Meu pedido <span class="badge">{{$totalItens}}</span></a></li>

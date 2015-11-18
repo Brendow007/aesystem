@@ -23,7 +23,7 @@
                     <br>
 
 
-                    <a class="btn-block btn-lg btn-success" href="/carrinho/carrinho">Iniciar Pedido! </a>
+                    <a class="btn-block btn-lg btn-success" href="/carrinho/carrinho">Finalizar Pedido! </a>
                 </div>
 
                 <br>

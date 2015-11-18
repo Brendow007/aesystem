@@ -12,15 +12,17 @@
 
         <div align="center"  class="page-header">
 
-            <h3 align="center" class="glyphicon glyphicon-shopping-cart">Meu Pedido</h3>
-        <aside class="fa-long-arrow-right" float:right><a type="submit"  class="alert btn btn btn-large btn-success">Finalizar pedido <b class="glyphicon glyphicon-arrow-right"></b></a></aside>
+            <h4 align="center" class="text-info glyphicon glyphicon-shopping-cart">Meu Pedido</h4>
+
+        <aside><a type="submit"  class="alert btn btn btn-large btn-success">Finalizar pedido <b class="glyphicon glyphicon-arrow-right"></b></a></aside>
+
         </div>
 
         <div class="row">
 
             <div class="col-lg-8 col-lg-offset-2">
 
-                <a href="{{route('listaprodutos')}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i>Quero pedir mais!</a>
+                <a href="{{route('listaprodutos1')}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i>Quero pedir mais!</a>
                 <br/>
                 <br/>
 
