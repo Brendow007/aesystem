@@ -26,8 +26,9 @@ Route::get('lista-produtos5', ['as' => 'listaprodutos5', 'uses' => 'MenuControll
 //Users
 Route::get('/users/listar','UserController@listar');
 //edit
-Route::get('users/editar/{id}','UserController@editar')->where('id', '[0-9]+');
-Route::put('users/update/{id}','UserController@update')->where('id', '[0-9]+');
+Route::get('users/editar/{id}',['as' => 'users.edit', 'uses' => 'UserController@editar'])->where('id', '[0-9]+');
+
+Route::put('users/update/{id}', ['as' => 'users.update', 'uses' => 'UserController@update'])->where('id', '[0-9]+');
 //delete
 Route::get('/users/deletar/{id}','UserController@deletar')->where('id', '[0-9]+');
 //detalhe
@@ -43,11 +44,15 @@ Route::get('pedido','PedidoController@listar');
 
 Route::get('pedido','PedidoController@listar');
 
-
+//registrando os controllers dessa forma, basta seguir uma convenço nos metodos
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+Route::get('pedidos/lista-pedidos', ['as' => 'pedidos.listapedidos', 'uses' => 'PedidosController@listaPedidos']);
+Route::get('pedidos/visualiza-pedido/{id}', ['as' => 'pedidos.visualiza', 'uses' => 'PedidosController@visualizaPedido']);
 
 
 Route::get('carrinho','CarrinhoController@carrinho');
@@ -66,6 +71,8 @@ Route::get('carrinho/carrinho', ['as' => 'carrinho.carrinho', 'uses' => 'Carrinh
 Route::delete('carrinho/remove',['as' => 'carrinho.remove', 'uses' => 'CarrinhoController@remove']);
 
 Route::get('carrinho/total', 'CarrinhoController@totalPrice');
+
+Route::post('carrinho/finaliza', ['as' => 'carrinho.finaliza', 'uses' => 'CarrinhoController@finalizarCarrinho']);
 
 
 ##

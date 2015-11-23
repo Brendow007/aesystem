@@ -29,8 +29,7 @@
                     </td>
 
 
-                <form class="form-horizontal" role="form" method="PUT" action="{{route('users/edit', ['id' => $users->id])}}">
-
+                <form class="form-horizontal" role="form" method="post" action="{{route('users.update', ['id' => $users->id])}}">
                     <!--campo necessario para seguranca da aplicacao contra csrf-->
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     {{--necessario para que seja enviado o verbo http esperado pela acao "update"--}}

@@ -21,9 +21,14 @@
                     <input type="number" class="form-control" name="quantidade" min="1" max="200" required>
 
                     <br>
-
-
-                    <a class="btn-block btn-lg btn-success" href="/carrinho/carrinho">Finalizar Pedido! </a>
+/qual que eh aquela que eu tava acessando?
+                    <form action="{{route('carrinho.finaliza')}}" method="post" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label" for="mesa">Mesa</label>
+                            <input type="text" name="mesa" id="mesa" required="true"/>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-lg btn-success">Finalizar pedido</button>
+                    </form>
                 </div>
 
                 <br>

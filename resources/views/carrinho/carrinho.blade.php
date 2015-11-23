@@ -14,7 +14,17 @@
 
             <h4 align="center" class="text-info glyphicon glyphicon-shopping-cart">Meu Pedido</h4>
 
-        <aside><a type="submit"  class="alert btn btn btn-large btn-success">Finalizar pedido <b class="glyphicon glyphicon-arrow-right"></b></a></aside>
+        <!--<aside><a type="submit"  class="alert btn btn btn-large btn-success">Finalizar pedido <b class="glyphicon glyphicon-arrow-right"></b></a></aside>-->
+
+            <form action="{{route('carrinho.finaliza')}}" method="post" class="form-inline">
+                <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+
+                <div class="form-group">
+                    <label class="control-label" for="mesa">Mesa</label>
+                    <input type="text" name="mesa" id="mesa" required="true" class="form-control" placeholder="Digite o numero da sua mesa"/>
+                </div>
+                <button type="submit" class="btn btn-lg btn-success">Finalizar pedido</button>
+            </form>
 
         </div>
 

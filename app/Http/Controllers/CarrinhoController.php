@@ -3,11 +3,15 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\ItemPedido;
+use App\Pedido;
 use Illuminate\Support\Facades\DB;
 use App\Produto;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Laracasts\Flash\Flash;
+use SebastianBergmann\Environment\Console;
 
 class CarrinhoController extends Controller {
 
@@ -67,6 +71,52 @@ class CarrinhoController extends Controller {
         Cart::destroy();
 
         Flash::success("Compra cancelada!");
+
+        return redirect()->back();
+    }
+
+    /**
+     * Finaliza o pedido recebendo a mesa como parametro da requisicao
+     * abre o pedido, salva, e salva os itens no pedido.
+     * @param Request $request
+     */
+    public function finalizarCarrinho(Request $request)
+    {
+        //esqueci dos metodos do package, perai.
+        $itens  = Cart::content();
+
+        $pedido = new Pedido();
+
+        $pedido->mesa = $request->mesa;
+        $pedido->total = Cart::total();
+
+        $pedido->save();
+
+        Log::info($pedido);
+
+        //por enquanto vai ser assim, mas pense numa maneira melhor
+        //de retornar o pedido criado.
+        $pedidoAtual = Pedido::orderBy('id', 'desc')->first();
+
+        $itensPedidos = array();
+
+        foreach($itens as $iten){
+            $itemPedido = new ItemPedido();
+
+            $itemPedido->nome = $iten->name;
+            $itemPedido->preco = $iten->price;
+            $itemPedido->quantidade = $iten->qty;
+
+            $itensPedidos[] = $itemPedido;
+        }
+
+        $pedidoAtual->itens()->saveMany($itensPedidos);
+
+        $pedidoAtual->save();
+
+        Cart::destroy();
+
+        Flash::success("Pedido finalizado!");
 
         return redirect()->back();
     }
