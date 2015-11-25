@@ -21,5 +21,5 @@ class Produto extends Model {
  *
  * crie o controller "php artisan make:controller nome-do-controller"
  *
- * e o resto e so codificar.
+ * e implementar a logica.
  */

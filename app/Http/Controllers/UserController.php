@@ -10,7 +10,7 @@ use Laracasts\Flash\Flash;
 class UserController extends Controller {
 //funçao que requere a autenticação para acessar as ações do controllador
 
-    public function __construct(){$this->middleware('auth');}
+    public function __construct(){$this->middleware('auth.admin');}
 
 // lista usuarios cadastrados
 
@@ -18,14 +18,6 @@ class UserController extends Controller {
 	{$users = User::all();
     return view('users.listar')->with('users',$users);
     }
-
-
-    //perfil
-    public function perfil(){
-    $users = User::all();
-    $pessoa = Pessoa::all();
-    return view('users/perfil')->with('pessoa',$pessoa);
-}
 
 
 #função editar usuario

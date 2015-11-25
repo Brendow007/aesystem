@@ -38,7 +38,7 @@
 
                         <div class="col-md-6">
 
-                            <input type="text" class="form-control text-info" name="name" value="{{$users->name}}">
+                            <input type="text" class="form-control text-info" name="name" required oninvalid="setCustomValidity('Por favor,coloque o nome')"onchange="try{setCustomValidity('')}catch(e){}" value="{{$users->name}}">
 
                         </div>
 
@@ -50,7 +50,7 @@
 
                         <div class="col-md-6">
 
-                            <input type="text" class="form-control" name="email" value="{{$users->email}}">
+                            <input type="text" class="form-control" name="email" required oninvalid="setCustomValidity('Por favor,coloque o email')"onchange="try{setCustomValidity('')}catch(e){}"value="{{$users->email}}">
 
                         </div>
 
@@ -62,7 +62,7 @@
 
                         <div class="col-md-6">
 
-                            <input type="text" class="form-control" name="telefone" value="{{$users->telefone}}">
+                            <input type="text" class="form-control" name="telefone" required oninvalid="setCustomValidity('Por favor,coloque o telefone')"onchange="try{setCustomValidity('')}catch(e){}" value="{{$users->telefone}}">
 
                         </div>
 
@@ -74,7 +74,7 @@
 
                         <div class="col-md-6">
 
-                            <input type="text" class="form-control" name="cpf" value="{{$users->cpf}}">
+                            <input type="text" class="form-control" name="cpf" required oninvalid="setCustomValidity('Por favor,coloque o cpf')"onchange="try{setCustomValidity('')}catch(e){}" value="{{$users->cpf}}">
 
                         </div>
 
@@ -87,7 +87,7 @@
 
                         <div class="col-md-6">
 
-                            <input type="text" class="form-control" name="endereco" value="{{ $users->endereco}}">
+                            <input type="text" class="form-control" name="endereco" required oninvalid="setCustomValidity('Por favor,coloque o endereço')"onchange="try{setCustomValidity('')}catch(e){}" value="{{ $users->endereco}}">
 
                         </div>
 
@@ -116,7 +116,9 @@
                                  <div class="form-group">
 
                                      <div class="col-md-6 col-md-offset-4">
+
                                          <br>
+
                                          <br>
 
                                          <button type="submit" class="btn btn-info">

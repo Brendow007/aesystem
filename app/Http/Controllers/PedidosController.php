@@ -9,14 +9,15 @@ use Illuminate\Http\Request;
 class PedidosController extends Controller {
 
 
+
     public function __construct(){
-        $this->middleware('auth.admin');
+        $this->middleware('auth.func');
     }
 
     //respond to lista-pedidos
     public function listaPedidos(){
         //para aumentar a quantidade de registros por pagina basta trocar o 2 pela quantidade
-        $pedidos = Pedido::orderBy('created_at', 'desc')->paginate(5 );
+        $pedidos = Pedido::orderBy('created_at', 'desc')->paginate(8);
 
         return view('pedidos.lista-pedidos')->with('pedidos', $pedidos);
     }
