@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d958abed-7dec-460a-8af3-20da0d9a00c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyIsUserFunc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Produto.php" afterPath="$PROJECT_DIR$/app/Produto.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProdutoController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProdutoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyIsUserAdmin.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyIsUserAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/users/editar.blade.php" afterPath="$PROJECT_DIR$/resources/views/users/editar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="meuprojeto.iws" />
@@ -360,13 +350,20 @@
       <option name="project" value="LOCAL" />
       <updated>1448416430990</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="FUNCIONALIDADES FINALIZADAS-&gt;&#10;&#10;1- Funcionalidade Controlar Produto&#10;2- Funcionalidade Controlar Usuário adicionada&#10;3- Funcionalidade de Carrinho adicionada&#10;3- Funcionalidade NÍveis de permissão de Usuário&#10;4- Funcionalidade Pedidos&#10;5- Design Aprimorado&#10;6- Cardapio&#10;&#10;Projeto AESytem concluído com sucesso!">
+      <created>1448459769605</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1448459769605</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1015" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -383,7 +380,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -414,7 +410,8 @@
     <MESSAGE value="Funcionalidade de carrinho adicionada&#10;Funcionalidade edição de usuário adicionada&#10;NÍveis de permissão finalizados&#10;Construindo Gerenciador de Pedidos&#10;Design Aprimorado&#10;Cardapio Finalizado" />
     <MESSAGE value="1- Funcionalidade Controlar Produto&#10;2- Funcionalidade Controlar Usuário adicionada&#10;3- Funcionalidade de Carrinho adicionada&#10;3- Funcionalidade NÍveis de permissão de Usuário&#10;4- Funcionalidade Pedidos&#10;5- Design Aprimorado&#10;6- Cardapio Finalizado" />
     <MESSAGE value="FUNCIONALIDADES FINALIZADAS-&gt;&#10;&#10;1- Funcionalidade Controlar Produto&#10;2- Funcionalidade Controlar Usuário adicionada&#10;3- Funcionalidade de Carrinho adicionada&#10;3- Funcionalidade NÍveis de permissão de Usuário&#10;4- Funcionalidade Pedidos&#10;5- Design Aprimorado&#10;6- Cardapio" />
-    <option name="LAST_COMMIT_MESSAGE" value="FUNCIONALIDADES FINALIZADAS-&gt;&#10;&#10;1- Funcionalidade Controlar Produto&#10;2- Funcionalidade Controlar Usuário adicionada&#10;3- Funcionalidade de Carrinho adicionada&#10;3- Funcionalidade NÍveis de permissão de Usuário&#10;4- Funcionalidade Pedidos&#10;5- Design Aprimorado&#10;6- Cardapio" />
+    <MESSAGE value="FUNCIONALIDADES FINALIZADAS-&gt;&#10;&#10;1- Funcionalidade Controlar Produto&#10;2- Funcionalidade Controlar Usuário adicionada&#10;3- Funcionalidade de Carrinho adicionada&#10;3- Funcionalidade NÍveis de permissão de Usuário&#10;4- Funcionalidade Pedidos&#10;5- Design Aprimorado&#10;6- Cardapio&#10;&#10;Projeto AESytem concluído com sucesso!" />
+    <option name="LAST_COMMIT_MESSAGE" value="FUNCIONALIDADES FINALIZADAS-&gt;&#10;&#10;1- Funcionalidade Controlar Produto&#10;2- Funcionalidade Controlar Usuário adicionada&#10;3- Funcionalidade de Carrinho adicionada&#10;3- Funcionalidade NÍveis de permissão de Usuário&#10;4- Funcionalidade Pedidos&#10;5- Design Aprimorado&#10;6- Cardapio&#10;&#10;Projeto AESytem concluído com sucesso!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
