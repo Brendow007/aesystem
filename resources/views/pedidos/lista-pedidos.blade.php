@@ -6,7 +6,9 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container" align="center">
+
+        <h1 align="center" class="text-info glyphicon glyphicon-time">Pedidos</h1>
 
         <div class="row">
 
@@ -38,22 +40,35 @@
                                 <tbody>
                                     @foreach($pedidos as $pedido)
                                         <tr>
+
                                             <td><a href="{{route('pedidos.visualiza', ['id' => $pedido->id])}}">{{$pedido->id}}</a></td>
                                             <td><b>{{$pedido->mesa}}</b></td>
                                             <td><b>R$ {{$pedido->total}}</b></td>
                                             <td>{{date_format($pedido->created_at, 'H:i')}}</td>
+
                                         </tr>
+
                                     @endforeach
+
                                 </tbody>
                             </table>
+
                         </div>
+
                     </div>
 
                     <div class="panel-footer">
+
                         {!! $pedidos->render() !!}
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 @endsection

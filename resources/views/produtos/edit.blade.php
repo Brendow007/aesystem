@@ -28,7 +28,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Nome</label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="nome" value="{{ $produto->nome }}">
+                            <input type="text" class="form-control" name="nome" required oninvalid="setCustomValidity('Por favor,coloque o nome')" onchange="try{setCustomValidity('')}catch(e){}" value="{{ $produto->nome }}">
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@
                         <label class="col-md-4 control-label">Preco</label>
                         <div class="col-md-6">
                             <!-- depois voc muda para um campo select com os tipos de produtos -->
-                            <input type="number" class="form-control" name="preco" step="0.01" min="1" max="10000.00" value="{{ $produto->preco }}">
+                            <input type="number" class="form-control" name="preco" step="0.01" min="1" max="10000.00" required oninvalid="setCustomValidity('Por favor,coloque o preço')" onchange="try{setCustomValidity('')}catch(e){}" value="{{ $produto->preco }}">
 
 
                         </div>
@@ -78,21 +78,21 @@
                         <label class="col-md-4 control-label">Quantidade</label>
                         <div class="col-md-6">
                             <!-- depois voc muda para um campo select com os tipos de produtos -->
-                            <input type="number" class="form-control" name="quantidade" value="{{ $produto->quantidade }}">
+                            <input type="number" class="form-control" name="quantidade" required oninvalid="setCustomValidity('Por favor,coloque a quantidade')" onchange="try{setCustomValidity('')}catch(e){}" value="{{ $produto->quantidade }}">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-md-4 control-label">Descricao</label>
                         <div class="col-md-6">
-                           <textarea name="descricao" placeholder="Descricao do produto" class="form-control">{{$produto->descricao}}</textarea>
+                           <textarea name="descricao" placeholder="Descrição do produto" required oninvalid="setCustomValidity('Por favor,coloque a descrição')" onchange="try{setCustomValidity('')}catch(e){}" class="form-control">{{$produto->descricao}}</textarea>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-4">
                             <button type="submit" class="btn btn-primary">
-                                Atualizar Produto
+                                Atualizar Produto!
                             </button>
 
 

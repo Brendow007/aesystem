@@ -16,7 +16,7 @@
             <div class="col-md-6 col-md-offset-3">
 
                 <div class="page-header">
-                    <h2 align="center">Cadastrar novo produto</h2>
+                    <h3 align="center">Cadastrar novo produto</h3>
                 </div>
 
                 <form class="form-horizontal" role="form" method="POST" action="{{route('produtos.store')}}">
@@ -30,7 +30,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Nome</label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="nome" required value="{{ old('nome') }}">
+                            <input type="text" class="form-control" name="nome" required oninvalid="setCustomValidity('Por favor,coloque o nome')" onchange="try{setCustomValidity('')}catch(e){}"  value="{{ old('nome') }}">
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@
                         <label class="col-md-4 control-label">Quantidade </label>
                         <div class="col-md-6">
                             <!-- depois voc muda para um campo select com os tipos de produtos -->
-                            <input type="number" class="form-control" name="quantidade" min="1" max="100000" required value="{{ old('quantidade') }}">
+                            <input type="number" class="form-control" name="quantidade" min="1" max="100000" required oninvalid="setCustomValidity('Por favor,coloque a quantidade')" onchange="try{setCustomValidity('')}catch(e){}" value="{{ old('quantidade') }}">
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
                         <label class="col-md-4 control-label">Preco</label>
                         <div class="col-md-6">
                             <!-- depois voc muda para um campo select com os tipos de produtos -->
-                            <input type="number" class="form-control" name="preco" step="0.01" min="1" max="10000.00" required value="{{ old('preco') }}">
+                            <input type="number" class="form-control" name="preco" step="0.01" min="1" max="10000.00" required oninvalid="setCustomValidity('Por favor,coloque o preço')" onchange="try{setCustomValidity('')}catch(e){}"  value="{{ old('preco') }}">
                         </div>
                     </div>
 
@@ -92,7 +92,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Descricao</label>
                         <div class="col-md-6">
-                           <textarea name="descricao" placeholder="Descricao do produto" required class="form-control"></textarea>
+                           <textarea name="descricao" placeholder="Descricao do produto" required oninvalid="setCustomValidity('Por favor,coloque a descrição')" onchange="try{setCustomValidity('')}catch(e){}" class="form-control"></textarea>
                         </div>
                     </div>
 
