@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration {
 			$table->string('password', 60);
             $table->string('endereco')->nullable();
             $table->string('perfil')->nullable();
-            $table->string('cpf')->unique()->nullable();
+            $table->string('cpf')->nullable();
             $table->string('telefone')->nullable();
 			$table->rememberToken();
 			$table->timestamps();

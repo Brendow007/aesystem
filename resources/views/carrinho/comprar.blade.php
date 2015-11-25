@@ -16,11 +16,12 @@
                     <div class="panel-heading panel-title text-center">Detalhes do produto</div>
 
                     <div class="panel-body">
-                        <h1>{{$produto->nome}}</h1>
+                        <h3>{{$produto->nome}}</h3>
                         <hr/>
 
-                        <p>Descrição: {{$produto->descricao}}</p>
-                        <p>Preço: {{$produto->preco}} </p>
+                        <b>Descrição:</b> {{$produto->descricao}}<br><br>
+
+                        <b>Preço:</b> R$ {{$produto->preco}}<br>
                             <form action="{{route('carrinho.adiciona')}}" method="post" class="form-horizontal">
                                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                                 <input type="hidden" name="id" value="{{$produto->id}}">
@@ -29,9 +30,10 @@
 
                                 <!-- Text input-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="quantidade">Quantidade</label>
+                                    <label class="col-md-5 control-label" for="quantidade">Quantidade</label>
                                     <div class="col-md-4">
-                                        <input id="quantidade" name="quantidade" type="number" min="1" required value="{{old('quantidade')}}" placeholder="" class="form-control input-md">
+                                        <input id="quantidade" name="quantidade" type="number" min="1" required oninvalid="setCustomValidity('Por favor,Coloque a Quantidade')"
+                                               onchange="try{setCustomValidity('')}catch(e){}" value="{{old('quantidade')}}" placeholder="" class="form-control input-md">
                                     </div>
                                 </div>
 
@@ -39,7 +41,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for=""></label>
                                     <div class="col-md-4">
-                                        <button  type="submit" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Adicionar ao carrinho</button>
+                                        <button  type="submit" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Adicionar ao pedido!</button>
                                     </div>
                                 </div>
                             </form>

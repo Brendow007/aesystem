@@ -6,7 +6,6 @@ Controle de Usuarios
 @section('content')
 
 
-@if(Auth::user()->perfil == null)
 
 
 <div class="container" align="center">
@@ -50,9 +49,7 @@ Controle de Usuarios
 
         @endforeach
 
-    @else <h1 align="center" class="alert alert-danger">Você não tem Permissão para esta área</h1>
 
             </table>
         </div>
-    @endif
 @endsection

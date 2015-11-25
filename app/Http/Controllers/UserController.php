@@ -39,7 +39,7 @@ class UserController extends Controller {
      }
 
 
-    public function update($request, $id)
+    public function update(Request $request, $id)
     {
 
         if($id == null){
@@ -52,22 +52,13 @@ class UserController extends Controller {
         //atualiza o produto com os possveis novos valores vindos do formulario de edicao
         $user->update($request->all(), $id);
 
+
+
         Flash::warning("Usuario atualizado com sucesso!");
 
         //redireciona novamente para index.
         return redirect()->action('UserController@listar');
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
     public function store(Requests $request)
@@ -85,16 +76,13 @@ class UserController extends Controller {
 
 
 
-
-
-
 #função detalhar usuário
 
     public function detalhar($id){
 
        // Flash::message("Em manutenção!");
        // $users = User::all();
-        $pessoas = Pessoa::all();
+       // $pessoas = Pessoa::all();
 
         $busca = DB::select('select * from users where id = ?' , [$id]);
 
@@ -103,7 +91,7 @@ class UserController extends Controller {
             return Flash::error("Usuário Inexistente!");
 
 
-        }return view('users/detalhar')->with('users',$busca)->with('pessoas',$pessoas);}
+        }return view('users/detalhar')->with('users',$busca);}
 
 
 #função deletar usuário

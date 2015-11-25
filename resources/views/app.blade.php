@@ -84,7 +84,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                    <li><a class="primary-color waves-effect waves-light" href="{{url('pedido')}}">Pedidos </a> </li>
+                    <li><a class="primary-color waves-effect waves-light" href="{{route('pedidos.listapedidos')}}">Pedidos </a> </li>
                 </ul>
 
 

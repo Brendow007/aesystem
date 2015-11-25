@@ -21,7 +21,7 @@
                     <input type="number" class="form-control" name="quantidade" min="1" max="200" required>
 
                     <br>
-/qual que eh aquela que eu tava acessando?
+
                     <form action="{{route('carrinho.finaliza')}}" method="post" class="form-horizontal">
                         <div class="form-group">
                             <label class="control-label" for="mesa">Mesa</label>

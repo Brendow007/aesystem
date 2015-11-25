@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+
     <div class="container">
 
         @include('partials/mensagem-valida-produto')
@@ -14,7 +15,7 @@
             <div class="col-md-6 col-md-offset-3">
 
                 <div class="page-header">
-                    <h2 align="center">Editando {{$produto->nome}}</h2>
+                    <h3 align="center">Editando: {{$produto->nome}}</h3>
                 </div>
 
                 <form class="form-horizontal" role="form" method="POST" action="{{route('produtos.update', ['id' => $produto->id])}}">
@@ -36,7 +37,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Tipo </label>
                         <div class="col-md-6">
-                            <!-- depois voc muda para um campo select com os tipos de produtos -->
+
                             <select name="tipo" class="form-control" {{ old('tipo') }}>
                                 <option value="Comida">Comida</option>
                                 <option value="Bebida">Bebida</option>

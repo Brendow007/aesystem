@@ -68,7 +68,7 @@
 
         </table>
                 <a class="btn btn-info" href="/users/listar">Voltar</a>
-                <a class="btn btn-success" href="/users/editar/{id} {{$u->id}}">Editar </a>
+                <a class="btn btn-success" href="/users/editar/{{$u->id}}">Editar </a>
 
         @endforeach
     </div>

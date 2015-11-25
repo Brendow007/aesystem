@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('title')
-    Meu carrinho.
+    Meu pedido.
 @endsection
 
 
@@ -21,9 +21,9 @@
 
                 <div class="form-group">
                     <label class="control-label" for="mesa">Mesa</label>
-                    <input type="text" name="mesa" id="mesa" required="true" class="form-control" placeholder="Digite o numero da sua mesa"/>
+                    <input type="text" name="mesa" id="mesa" style="text-align:center;" required oninvalid="setCustomValidity('Por favor,Coloque sua Mesa')" onchange="try{setCustomValidity('')}catch(e){}" class="form-control" placeholder="Digite sua mesa aqui"/>
                 </div>
-                <button type="submit" class="btn btn-lg btn-success">Finalizar pedido</button>
+                <h5> <button type="submit" class="btn btn-lg btn-success"><b class="glyphicon glyphicon-ok"></b> Finalizar pedido</button></h5>
             </form>
 
         </div>

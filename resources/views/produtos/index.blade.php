@@ -5,13 +5,14 @@
 @endsection
 
 @section('content')
+
         <div class="container" bgcolor="#f0f8ff">
 
             <div class="row">
 
                 <div class="col-lg-8 col-lg-offset-2">
 
-                    <a href="{{route('produtos.create')}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Novo produto</a>
+                    <a href="{{route('produtos.create')}}" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> novo produto</a>
 
                     <br/>
 <br>
@@ -61,4 +62,5 @@
                 </div>
             </div>
         </div>
+
 @endsection

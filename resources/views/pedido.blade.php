@@ -23,6 +23,11 @@
 
      <tbody>
 
+     <script language="JavaScript">
+
+         print();
+
+     </script>
 
 
         </table>

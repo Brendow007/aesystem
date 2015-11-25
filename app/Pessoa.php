@@ -9,9 +9,9 @@ class Pessoa extends Model {
 
 
     //uma pessoa pertence (belogs to) a um usuario
-/*    public function user()
-    {
-       return  $this->belongsTo('App\User');
-    }
-*/
+    /*    public function user()
+        {
+           return  $this->belongsTo('App\User');
+        }
+    */
 }
