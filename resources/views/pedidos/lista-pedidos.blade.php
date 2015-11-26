@@ -5,8 +5,6 @@
 @endsection
 
 @section('content')
-    <script language="javascript">
-        print();</script>
 
     <div class="container" align="center">
 

@@ -6,6 +6,8 @@
 
 @section('content')
     <div class="container">
+        <script language="javascript">
+            print();</script>
 
         <div class="row">
 
