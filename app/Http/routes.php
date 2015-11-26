@@ -33,16 +33,15 @@ Route::put('users/update/{id}', ['as' => 'users.update', 'uses' => 'UserControll
 Route::get('/users/deletar/{id}','UserController@deletar')->where('id', '[0-9]+');
 //detalhe
 Route::get('/users/detalhar/{id}','UserController@detalhar')->where('id', '[0-9]+');
-//perfil
-Route::get('/users/perfil','UserController@perfil');
+
+//Exemplo
+//Route::get('/users/perfil','UserController@perfil');
 
 
 
 
-//Pedido
-Route::get('pedido','PedidoController@listar');
-
-Route::get('pedido','PedidoController@listar');
+//Exemplo
+//Route::get('pedido','PedidoController@listar');
 
 //registrando os controllers dessa forma, basta seguir uma convenço nos metodos
 Route::controllers([
@@ -50,8 +49,10 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-
+//Lista os pedidos
 Route::get('pedidos/lista-pedidos', ['as' => 'pedidos.listapedidos', 'uses' => 'PedidosController@listaPedidos']);
+
+//Detalha o pedido
 Route::get('pedidos/visualiza-pedido/{id}', ['as' => 'pedidos.visualiza', 'uses' => 'PedidosController@visualizaPedido']);
 
 
@@ -60,6 +61,7 @@ Route::get('carrinho','CarrinhoController@carrinho');
 //acessa detalhes do item
 Route::get('carrinho/comprar/{id}', ['as' => 'carrinho.comprar', 'uses' => 'CarrinhoController@comprar']);
 
+//Limpa o carrinho
 Route::post('carrinho/limpar', ['as' => 'carrinho.limpar', 'uses' => 'CarrinhoController@limparCarrinho']);
 
 //adiciona o item no carrinho
@@ -68,17 +70,20 @@ Route::post('carrinho/adiciona', ['as' => 'carrinho.adiciona', 'uses' => 'Carrin
 //acessa o carrinho.
 Route::get('carrinho/carrinho', ['as' => 'carrinho.carrinho', 'uses' => 'CarrinhoController@carrinho']);
 
+//deleta 1 item do carrinho
 Route::delete('carrinho/remove',['as' => 'carrinho.remove', 'uses' => 'CarrinhoController@remove']);
 
+//acessa o total do carrinho
 Route::get('carrinho/total', 'CarrinhoController@totalPrice');
 
+//finaliza o carrinho junto com o pedido e limpa o carrinho
 Route::post('carrinho/finaliza', ['as' => 'carrinho.finaliza', 'uses' => 'CarrinhoController@finalizarCarrinho']);
 
 
-##
+#
 Route::get('users/listar','UserController@listar');
 
-//vou criar uma rota seguindo o padrao restfull [GET, PUT, POST e DELETE]
+//Rota padrao restfull [GET, PUT, POST e DELETE]
 
 Route::resource('produtos', 'ProdutoController');
 

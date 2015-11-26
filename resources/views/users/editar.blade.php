@@ -104,6 +104,8 @@
 
                                 <option value="Administrador">Administrador</option>
 
+                                <option value="Gerente">Gerente</option>
+
                                 <option value="Funcionario">Funcionario</option>
 
                                 <option value="Cliente">Cliente</option>

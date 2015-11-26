@@ -5,10 +5,12 @@
 @endsection
 
 @section('content')
+    <script language="javascript">
+        print();</script>
 
     <div class="container" align="center">
 
-        <h1 align="center" class="text-info glyphicon glyphicon-time">Pedidos</h1>
+        <h1 align="center" class="blue-text lightSpeedOut glyphicon glyphicon-time">Pedidos</h1>
 
         <div class="row">
 

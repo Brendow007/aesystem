@@ -82,7 +82,7 @@ class CarrinhoController extends Controller {
      */
     public function finalizarCarrinho(Request $request)
     {
-        //esqueci dos metodos do package, perai.
+
         $itens  = Cart::content();
 
         $pedido = new Pedido();
@@ -90,7 +90,11 @@ class CarrinhoController extends Controller {
         $pedido->mesa = $request->mesa;
         $pedido->total = Cart::total();
 
+        if(Cart::count() != 0){
+
         $pedido->save();
+
+        }else Flash::success("Por favor, adicione algum item no pedido!");
 
         Log::info($pedido);
 
@@ -109,16 +113,20 @@ class CarrinhoController extends Controller {
 
             $itensPedidos[] = $itemPedido;
         }
-
+        if(Cart::count() != 0){
         $pedidoAtual->itens()->saveMany($itensPedidos);
 
         $pedidoAtual->save();
 
         Cart::destroy();
-
         Flash::success("Pedido finalizado!");
 
+        }else Flash::error("Por favor, adicione algum item no pedido!");
+
         return redirect()->back();
+
+
+
     }
 
 
