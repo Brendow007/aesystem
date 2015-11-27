@@ -13,7 +13,7 @@ class ProdutoController extends Controller {
 
 
     public function __construct(){
-        $this->middleware('auth.admin');
+        $this->middleware('auth.con');
     }
 
         //registra o middleware de autenticacao para todos os recursos deste controller.

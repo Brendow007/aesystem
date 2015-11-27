@@ -17,6 +17,7 @@ Route::get('/', 'WelcomeController@index');
 //home
 Route::get('home', 'HomeController@index');
 
+#menu
 Route::get('lista-produtos1', ['as' => 'listaprodutos1', 'uses' => 'MenuController@produtos1']);
 Route::get('lista-produtos2', ['as' => 'listaprodutos2', 'uses' => 'MenuController@produtos2']);
 Route::get('lista-produtos3', ['as' => 'listaprodutos3', 'uses' => 'MenuController@produtos3']);
@@ -27,7 +28,7 @@ Route::get('lista-produtos5', ['as' => 'listaprodutos5', 'uses' => 'MenuControll
 Route::get('/users/listar','UserController@listar');
 //edit
 Route::get('users/editar/{id}',['as' => 'users.edit', 'uses' => 'UserController@editar'])->where('id', '[0-9]+');
-
+//update
 Route::put('users/update/{id}', ['as' => 'users.update', 'uses' => 'UserController@update'])->where('id', '[0-9]+');
 //delete
 Route::get('/users/deletar/{id}','UserController@deletar')->where('id', '[0-9]+');
@@ -55,7 +56,7 @@ Route::get('pedidos/lista-pedidos', ['as' => 'pedidos.listapedidos', 'uses' => '
 //Detalha o pedido
 Route::get('pedidos/visualiza-pedido/{id}', ['as' => 'pedidos.visualiza', 'uses' => 'PedidosController@visualizaPedido']);
 
-
+//retorna o carrinho
 Route::get('carrinho','CarrinhoController@carrinho');
 
 //acessa detalhes do item

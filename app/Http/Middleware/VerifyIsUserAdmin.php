@@ -14,7 +14,7 @@ class VerifyIsUserAdmin {
 	 */
 	public function handle($request, Closure $next)
 	{
-        if(Auth::guest() || Auth::user()->perfil != 'Administrador' && Auth::user()->perfil != 'Gerente'){
+        if(Auth::guest() || Auth::user()->perfil != 'Administrador'){
             return redirect('/');
         }
 

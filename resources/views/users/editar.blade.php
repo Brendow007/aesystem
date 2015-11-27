@@ -106,7 +106,7 @@
 
                                 <option value="Gerente">Gerente</option>
 
-                                <option value="Funcionario">Funcionario</option>
+                                <option value="Cozinheiro">Cozinheiro</option>
 
                                 <option value="Cliente">Cliente</option>
 
@@ -120,7 +120,8 @@
                                      <div class="col-md-6 col-md-offset-4">
 
                                          <br>
-
+                                         <br>
+                                         <br>
                                          <br>
 
                                          <button type="submit" class="btn btn-info">

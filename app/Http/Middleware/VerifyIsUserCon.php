@@ -3,12 +3,12 @@
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class VerifyIsUserFunc {
+class VerifyIsUserCon {
 
 
     public function handle($request, Closure $next)
     {
-        if(Auth::guest() || Auth::user()->perfil != 'Cozinheiro'){
+        if(Auth::guest() || Auth::user()->perfil != 'Administrador' && Auth::user()->perfil != 'Gerente'){
             return redirect('/');
         }
 

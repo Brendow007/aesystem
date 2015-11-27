@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 
 class PedidosController extends Controller {
 
-
+//Esta função indica que, ao alguem tentar acessar as funções deste controllador que foi apontado pala classe "routes"
+//Ela requisita uma autenticação de Usuário
 
     public function __construct(){
         $this->middleware('auth.func');

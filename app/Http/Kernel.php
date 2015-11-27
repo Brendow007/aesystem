@@ -30,6 +30,7 @@ class Kernel extends HttpKernel {
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
         'auth.admin' => 'App\Http\Middleware\VerifyIsUserAdmin',
         'auth.func' => 'App\Http\Middleware\VerifyIsUserFunc',
+        'auth.con' => 'App\Http\Middleware\VerifyIsUserCon',
 	];
 
 }
